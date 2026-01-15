@@ -1,5 +1,5 @@
 ---
-name: addlog
+name: add-log
 description: Add design/product decisions from our conversation to the decision log
 accepts_args: true
 ---
