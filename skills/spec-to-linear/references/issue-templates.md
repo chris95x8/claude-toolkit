@@ -2,8 +2,6 @@
 
 Examples of well-formed issues for both human and agent executors.
 
----
-
 ## Human Issue Template
 
 ```

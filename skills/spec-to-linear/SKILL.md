@@ -69,7 +69,13 @@ For each layer, generate a list of issues following these rules:
 - Executor: `[Human]` or `[Agent]`
 - Label: the layer name
 
-**Aim for the smallest issue that is still independently actionable.** If an issue would take more than a focused day of work, split it.
+**Each issue should map to one pull request.** This is the primary sizing heuristic: if an agent would naturally open two separate PRs to complete the work, split it into two issues. If it would all land in one PR, keep it as one issue.
+
+In practice this means:
+- One issue adds one feature, fixes one bug, or implements one coherent slice of the system
+- An issue that touches unrelated files or subsystems is a sign it should be split
+- An issue that is "just a few lines" is fine — small PRs are good
+- If you're unsure, ask: "Could this be reviewed and merged independently?" If yes, it's a valid issue.
 
 **Do NOT assign issue numbers** — Linear auto-assigns these.
 
